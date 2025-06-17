@@ -5,21 +5,21 @@
 class SpeedrunCli < Formula
   desc "Browse speedrun.com leaderboards from your terminal"
   homepage "https://github.com/marcusziade/speedrun-cli"
-  version "1.4.0"
+  version "1.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marcusziade/speedrun-cli/releases/download/1.4.0/speedrun-cli_Darwin_x86_64.tar.gz"
-      sha256 "695947094021f6d32625df00504ac1c521c421a851e7d8e27b90ac15d9872daa"
+      url "https://github.com/marcusziade/speedrun-cli/releases/download/1.4.1/speedrun-cli_Darwin_x86_64.tar.gz"
+      sha256 "a1d97a462e186b71ade6873ac29c49613d8c61a2266e233777bc173efee42d25"
 
       def install
         bin.install "speedrun-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marcusziade/speedrun-cli/releases/download/1.4.0/speedrun-cli_Darwin_arm64.tar.gz"
-      sha256 "23a2bce9441c59c4142923eb932091331860a25c3b92981144e2bd3b4d3701d1"
+      url "https://github.com/marcusziade/speedrun-cli/releases/download/1.4.1/speedrun-cli_Darwin_arm64.tar.gz"
+      sha256 "24eb21ea427cbfd2df7f3b9b15a09d5630f20d96f0c663a9cd63fea4b3818083"
 
       def install
         bin.install "speedrun-cli"
@@ -29,15 +29,15 @@ class SpeedrunCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/marcusziade/speedrun-cli/releases/download/1.4.0/speedrun-cli_Linux_x86_64.tar.gz"
-      sha256 "739db6e6a892112e7f966a55e4f6fe5dc43860f511bee0f1d266072e4cb8116b"
+      url "https://github.com/marcusziade/speedrun-cli/releases/download/1.4.1/speedrun-cli_Linux_x86_64.tar.gz"
+      sha256 "6008f946b2c88a9a135887e9f097e7e0450bea1bd87780e741cf0b36d1998b44"
       def install
         bin.install "speedrun-cli"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/marcusziade/speedrun-cli/releases/download/1.4.0/speedrun-cli_Linux_arm64.tar.gz"
-      sha256 "daadff8dfa01c3a5258158bce48d09fbd19be3187d6e5d4913349fea3c0c5a35"
+      url "https://github.com/marcusziade/speedrun-cli/releases/download/1.4.1/speedrun-cli_Linux_arm64.tar.gz"
+      sha256 "5ce873ad577ab9aa01308a152f08944d1c32ed81afb86f3c534fca57176cd63a"
       def install
         bin.install "speedrun-cli"
       end

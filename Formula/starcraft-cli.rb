@@ -9,7 +9,7 @@ class StarcraftCli < Formula
 
   on_macos do
     url "https://github.com/marcusziade/StarCraftKit/releases/download/2.0.0/starcraft-cli-macos.tar.gz"
-    sha256 "296679c46cb3568e7b77495c20d3681b2d8679e68d42f236c6f977c813caa1e8"
+    sha256 "a120631f77b2c831bedc475eaa8b924521a35d82ea44b9710f311daa4f345484"
 
     def install
       bin.install "starcraft-cli"
@@ -19,7 +19,7 @@ class StarcraftCli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/marcusziade/StarCraftKit/releases/download/2.0.0/starcraft-cli-linux.tar.gz"
-      sha256 "c508b439f47530a1466f1f65198069e2ce890acfe3ac3279fa017ed4d450dd93"
+      sha256 "779c284af32db630c7b6cfcf9ff643935919c01ed494741d9cab275acad18815"
       
       def install
         bin.install "starcraft-cli"
